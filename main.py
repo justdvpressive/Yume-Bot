@@ -29,7 +29,7 @@ with open('./token.json', 'r') as cjson:
 
 
 
-desc = "discord bot v2.0"
+desc = " "
 PREFIX = config["prefix"]
 modules = config["modules"]
 OWNER = config["owner_id"]
@@ -38,6 +38,11 @@ TOKEN = token["token"]
 global client
 client = commands.Bot(command_prefix=PREFIX, description=desc)
 client.config = config
+
+global mongo
+global db
+mongo = MongoClient('mongo', 27017)
+db = mongo.bot
 
 client.remove_command('help')
 
@@ -64,6 +69,7 @@ async def on_error(event, *args, **kwargs):
     logging.basicConfig(level=logging.WARNING, filename="error.log", filemode="a+",
                         format="%(asctime)-15s %(levelname)-8s %(message)s")
     logging.error(event + " -> " + str(args) + " " + str(kwargs))
+
 
 
 @client.event

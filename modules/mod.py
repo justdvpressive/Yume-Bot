@@ -36,7 +36,6 @@ class Mod:
         id = user.id
 
 
-
         unit = duration[-1]
         if unit == 's':
             time = int(duration[:-1])
