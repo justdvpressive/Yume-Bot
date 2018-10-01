@@ -1,14 +1,7 @@
 {
     "prefix" : "--",
-<<<<<<< HEAD
-    "owner_id" : "434421758540644382",
-    "mod_roles" : ["Staff"],
-    "version": "0.0.8",
-    "modules" : ["mod", "help", "credit", "whois", "info", "ping", "shortcut", "daterep", "say", "mentions", "blacklist", "lg"]
-=======
     "owner_id" : "282233191916634113",
     "version": "1.0.0-stable",
     "modules": ["mod", "help", "credit", "whois", "info", "ping", "shortcut", "daterep", "say", "mentions", "blacklist", "report"]
 
->>>>>>> master
 }
