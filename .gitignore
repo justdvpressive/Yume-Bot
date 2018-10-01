@@ -104,6 +104,10 @@ venv.bak/
 .mypy_cache/
 
 #files
+<<<<<<< HEAD
 /token.json
+=======
+/config/token.json
+>>>>>>> develop
 /data/db
 /package-lock.json
