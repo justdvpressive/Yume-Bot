@@ -6,7 +6,38 @@ All notable changes to this project will be documented in this file. The format 
 
 ---
 
-## [Pre-1.0.0](https://github.com/yumepantai/Yume-Bot/releases/tag/1.0.0) - 2018-09-30
+## [1.0.1](https://github.com/yumepantai/Yume-Bot/releases/tag/1.0.1) - 2018-10-01
+
+
+### Patched
+
+- Major feedback error
+
+---
+
+## [Stable - 1.0.0](https://github.com/yumepantai/Yume-Bot/releases/tag/1.0.0) - 2018-10-01
+
+### Changed
+
+#### Folder
+
+- Add config folder
+
+### Patched
+
+- Owner ID
+- Github template files
+
+### Added
+
+#### Report
+
+- New feedback commands
+
+
+---
+
+## [Pre-1.0.0](https://github.com/yumepantai/Yume-Bot/releases/tag/1.0.0a) - 2018-09-30
 
 ### Changed
 
