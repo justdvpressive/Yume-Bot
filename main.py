@@ -22,10 +22,10 @@ except ImportError:
 
 
 with open('./config/config.json', 'r') as cjson:
-        config = json.load(cjson)
+    config = json.load(cjson)
 
 with open('./config/token.json', 'r') as cjson:
-    token  = json.load(cjson)
+    token = json.load(cjson)
 
 
 <<<<<<< HEAD
@@ -49,12 +49,13 @@ db = mongo.bot
 
 client.remove_command('help')
 
+
 async def status_task():
     while True:
         await client.change_presence(activity=discord.Game(name=PREFIX + "help"))
         await asyncio.sleep(10)
-        #await client.change_presence(activity=discord.Game(name=desc))
-        await client.change_presence(activity=discord.Game(name= "Peace and Dream"))
+        # await client.change_presence(activity=discord.Game(name=desc))
+        await client.change_presence(activity=discord.Game(name="Peace and Dream"))
         await asyncio.sleep(10)
         await client.change_presence(activity=discord.Game(name="By Yume"))
         await asyncio.sleep(10)
@@ -67,6 +68,7 @@ async def on_command_error(ctx, exception):
     logging.error(str(exception))
     if re.match(r'^The check functions for command.*', str(exception)) is None:
         await ctx.send(str(exception))
+
 
 @client.event
 async def on_error(event, *args, **kwargs):
@@ -87,7 +89,6 @@ async def on_ready():
     client.loop.create_task(status_task())
 
 
-
 def ready(client, config):
     for module in modules:
         try:
@@ -96,6 +97,7 @@ def ready(client, config):
             print('client.load_extension is working')
         except Exception as e:
             raise Exception(e)
+
 
 ready(client, config)
 
