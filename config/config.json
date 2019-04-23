@@ -1,6 +1,6 @@
 {
-    "prefix" : "--",
-    "owner_id" : "282233191916634113",
+    "prefix" : ".",
+    "owner_id" : "544580475952431104",
     "version": "1.0.0-stable",
     "modules": ["mod", "help", "credit", "whois", "info", "ping", "shortcut", "daterep", "say", "mentions", "blacklist", "report", "fun", "meteo"]
 
